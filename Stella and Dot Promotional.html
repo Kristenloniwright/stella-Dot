@@ -8,10 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Use the latest (edge) version of IE rendering engine -->
     <title>S&amp;D</title>
-    <!-- The title tag shows in email notifications, like Android 4.4. -->
-    <!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
-    <!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
-
+    
     <!-- CSS Reset -->
     <style type="text/css">
 /* What it does: Remove spaces around the email design added by some email clients. */
@@ -22,25 +19,25 @@ html,  body {
 	height: 100% !important;
 	width: 100% !important;
 }
-/* What it does: Stops email clients resizing small text. */
+
 * {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
-/* What it does: Forces Outlook.com to display emails full width. */
+
 .ExternalClass {
 	width: 100%;
 }
-/* What is does: Centers email on Android 4.4 */
+
 div[style*="margin: 16px 0"] {
 	margin: 0 !important;
 }
-/* What it does: Stops Outlook from adding extra spacing to tables. */
+
 table,  td {
 	mso-table-lspace: 0pt !important;
 	mso-table-rspace: 0pt !important;
 }
-/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+
 table {
 	border-spacing: 0 !important;
 	border-collapse: collapse !important;
@@ -50,15 +47,15 @@ table {
 table table table {
 	table-layout: auto;
 }
-/* What it does: Uses a better rendering method when resizing images in IE. */
+
 img {
 	-ms-interpolation-mode: bicubic;
 }
-/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+
 .yshortcuts a {
 	border-bottom: none !important;
 }
-/* What it does: Another work-around for iOS meddling in triggered links. */
+
 a[x-apple-data-detectors] {
 	color: inherit !important;
 }
@@ -85,7 +82,7 @@ a[x-apple-data-detectors] {
                 width: 100% !important;
             }
 
-            /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+            
             .fluid,
             .fluid-centered {
                 max-width: 100% !important;
@@ -99,7 +96,7 @@ a[x-apple-data-detectors] {
                 margin-right: auto !important;
             }
 
-            /* What it does: Forces table cells into full-width rows. */
+            
             .stack-column,
             .stack-column-center {
                 display: block !important;
@@ -107,12 +104,12 @@ a[x-apple-data-detectors] {
                 max-width: 100% !important;
                 direction: ltr !important;
             }
-            /* And center justify these ones. */
+            
             .stack-column-center {
                 text-align: center !important;
             }
         
-            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+           
             .center-on-narrow {
                 text-align: center !important;
                 display: block !important;
